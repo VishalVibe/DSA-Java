@@ -17,8 +17,8 @@ class Solution {
         }
     }
     private boolean checkSum(int i , int[] nums , int target , int[][] dp){
-        if(i ==0 && target !=0){
-            return false;
+        if(i ==0){
+            return target == nums[i];
         }
         if(target ==0){
             return true;
